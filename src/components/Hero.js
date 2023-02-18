@@ -9,7 +9,7 @@ export const Hero = () => {
             <div className='lg:w-[50%] mb-3'>
                 <div className='mb-2'>
                 <Header type={1} text={'Building Strong Foundations, Creating Better Tomorrows'} />
-                <svg className='block m-auto w-[110px] lg:w-[275px] lg:h-[28px]' widt="275" heigh="28" viewBox="0 0 275 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg className='block lg:m-auto w-[110px] lg:w-[275px] lg:h-[28px]' widt="275" heigh="28" viewBox="0 0 275 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M2 25C62 -4.00001 207.4 -3.80002 273 25" stroke="#45CD45" stroke-width="5" />
                 </svg>
                 </div>
