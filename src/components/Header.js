@@ -1,12 +1,12 @@
 import { Button } from "./Button"
 
-export const Header = ({ type, text, content }) => {
+export const Header = ({ type, text, content, className }) => {
     return (
         <div className=''>
             {
                  type === 1 && 
-            <header className='text-center'>
-                <h4>{text}</h4>
+            <header className={`'text-[16px] lg:text-[48px] font-bold text-[700]'`}>
+                <h4 className={`${className} "text-center lg:text-left"`}>{text}</h4>
             </header>
             }
             {

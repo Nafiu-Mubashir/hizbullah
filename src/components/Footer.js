@@ -6,9 +6,9 @@ const Footer = () => {
         <div>
 
             <footer class="bg-[#001300] bottom">
-                <div class="flex justify-evenly flex-col lg:flex-row px-6 py-8 ">
-                    <div className=''>
-                        <h2 class="mb-3 lg:mb-6 text-sm font-bold text-[#FFFFFF] uppercase">Hizbullah</h2>
+                <div class="flex justify-evenly flex-col lg:flex-row px-6 py-8">
+                    <div className='text-center md:text-center lg:text-left'>
+                        <h2 class="mb-3 lg:mb-6 text-sm font-bold text-[#45CD45] uppercase">Hizbullah</h2>
                         <p class="text-[#FFFFFF] lg:w-[390px] mb-4">
                             Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
                         </p>
@@ -26,7 +26,7 @@ const Footer = () => {
 
                         </div>
                     </div>
-                    <div>
+                    <div className=' text-center md:text-center lg:text-left'>
                         <h2 class="mb-3 lg:mb-6 text-sm font-bold text-[#FFFFFF] uppercase">Quick links</h2>
                         <ul class="text-[#FFFFFF]">
                             <li class="mb-4">
@@ -49,10 +49,10 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className=' text-center md:text-center lg:text-left'>
                         <h2 class="mb-3 lg:mb-6 text-sm font-bold text-[#FFFFFF] uppercase">Contact us</h2>
                         <ul class="text-[#FFFFFF]">
-                            <li class="mb-4">
+                            <li class="mb-4 text-center md:text-center lg:text-left">
                                 <a href="#" className="hover:underline flex gap-2">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 17.93 17.93 22.75 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z" fill="#F4F4F4" />
@@ -88,7 +88,7 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div>
+                    <div className=' text-center md:text-center lg:text-left'>
                         <h2 class="mb-3 lg:mb-6 text-sm font-bold text-[#FFFFFF] uppercase lg:text-center">News letter</h2>
                         <p class="text-[#FFFFFF] lg:w-[287px] mb-3">
                             Subscribe to get important informations when they drop

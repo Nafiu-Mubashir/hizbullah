@@ -49,16 +49,16 @@ const Navbar = () => {
                     </button>
                     <div className={toggle === false ? 'hidden w-full md:block md:w-auto' : 'w-full md:block md:w-auto'} id="navbar-default" ref={wrapperRef}>
                         <ul className="flex lg:flex-rows flex-col items-center text-left p-2 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
-                            <NavLink>
+                            <NavLink to={'/'}>
                                 <p className="block py-2 pl-3 pr-4 text-[12px] text-[#45CD45] rounded md:bg-transparent md:text-[#45CD45] md:p-0" aria-current="page">Home</p>
                             </NavLink>
-                            <NavLink>
+                            <NavLink to={'/about'}>
                                 <p className="block py-2 pl-3 pr-4 text-[12px] text-gray-700 rounded md:border-0 md:hover:text-[#45CD45] md:p-0">About Us</p>
                             </NavLink>
-                            <NavLink>
+                            <NavLink to={'/blog'}>
                                 <p className="block py-2 pl-3 pr-4 text-[12px] text-gray-700 rounded md:border-0 md:hover:text-[#45CD45] md:p-0">Blog</p>
                             </NavLink>
-                            <NavLink>
+                            <NavLink to={'/contact'}>
                                 <p className="block py-2 pl-3 pr-4 text-[12px] text-gray-700 rounded md:border-0 md:hover:text-[#45CD45] md:p-0">Contact Us</p>
                             </NavLink>
                             <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="text-[12px] flex items-center justify-between w-24 py-2 pl-3 pr-4 font-medium border-b border-gray-100 text-gray-700 rounded md:border-0 md:hover:text-[#45CD45] md:p-0 md:w-auto" onClick={handleDropDown}> Schools
