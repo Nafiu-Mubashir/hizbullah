@@ -11,19 +11,19 @@ export const Image = ({ type, text, content }) => {
             {
                 type === 1 &&
                 <div className='p-2 lg:p-5'>
-                    <img src={image} className='w-[374px] lg:w-[608px] h-[320px] lg:h-[414px] box-shadow rounded-lg bg-[#45CD45]' alt="" />
+                    <img src={image} className='w-full lg:w-[608px] h-[320px] lg:h-[414px] box-shadow rounded-lg bg-[#45CD45]' alt="" />
                 </div>
             }
             {
                 type === 2 &&
                 <div className='p-2 lg:p-5'>
-                    <img src={image1} className='w-[374px] lg:w-[608px] h-[320px] lg:h-[414px] box-shadow2 rounded-lg bg-[#45CD45]' alt="" />
+                    <img src={image1} className='w-full lg:w-[608px] h-[320px] lg:h-[414px] box-shadow2 rounded-lg bg-[#45CD45]' alt="" />
                 </div>
             }
             {
                 type === 3 &&
                 <div className='p-2 lg:p-5'>
-                    <img src={image2} className='w-[374px] lg:w-[608px] h-[320px] lg:h-[414px] box-shadow3 rounded-lg bg-[#45CD45]' alt="" />
+                    <img src={image2} className='w-full lg:w-[608px] h-[320px] lg:h-[414px] box-shadow3 rounded-lg bg-[#45CD45]' alt="" />
                 </div>
             }
             {
