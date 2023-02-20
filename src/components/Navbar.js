@@ -36,10 +36,10 @@ const Navbar = () => {
     useOutsideAlerter(wrapperRef);
 
     return (
-        <div className='sticky z-50 w-full'>
+        <div className='sticky top-0 z-50 w-full'>
 
             <nav className="bg-white border-gray-200 sm:px-4 shadow">
-                <div className="container flex flex-wrap items-center justify-between mx-auto lg:w-[80%] p-2">
+                <div className="container flex flex-wrap items-center justify-between mx-auto lg:w-[90%] p-2">
                     <NavLink to='/home'>
                         <p className='uppercase text-[#45CD45] text-[18px] font-[700]'>Hizbullah</p>
                     </NavLink>
@@ -48,7 +48,7 @@ const Navbar = () => {
                         <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
                     </button>
                     <div className={toggle === false ? 'hidden w-full md:block md:w-auto' : 'w-full md:block md:w-auto'} id="navbar-default" ref={wrapperRef}>
-                        <ul className="flex lg:flex-rows flex-col items-center text-left p-2 border border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+                        <ul className="flex lg:flex-rows flex-col items-center text-left p-2 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
                             <NavLink to={'/'}>
                                 <p className="block py-2 pl-3 pr-4 text-[12px] text-[#45CD45] rounded md:bg-transparent md:text-[#45CD45] md:p-0" aria-current="page">Home</p>
                             </NavLink>

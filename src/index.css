@@ -32,6 +32,10 @@
     background-image: url('./assets/Rectangle 13.png');
    
   }
+  
+  .about {
+    background-image: url('./assets/aboutUs.png');
+  }
 
   @media (max-width: 678px) {
     .bg{

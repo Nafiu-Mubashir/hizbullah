@@ -6,7 +6,7 @@ import mobileImage from '../assets/Header picture size for mobile.png'
 export const Hero = () => {
     return (
         <div className='flex flex-col lg:flex-row justify-between items-center w-full'>
-            <div className='lg:w-[50%] mb-3'>
+            <div className='lg:w-[50%] mb-3 p-5'>
                 <div className='mb-2'>
                 <Header type={1} text={'Building Strong Foundations, Creating Better Tomorrows'} />
                 <svg className='block lg:m-auto w-[110px] lg:w-[275px] lg:h-[28px]' widt="275" heigh="28" viewBox="0 0 275 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,7 +18,7 @@ export const Hero = () => {
                 <Button text={'Get Started'} className={'block m-auto lg:m-0'} />
             </div>
 
-            <div className='lg:w-[50%] mb-3 mx-auto'>
+            <div className='lg:w-[50%] mb-3 p-5 mx-auto'>
                 <img src={deskImage} alt="" className='hidden lg:block w-[519px] ml-auto' />
                 <img src={mobileImage} alt="" className='block lg:hidden w-[358px]' />
             </div>
