@@ -48,7 +48,7 @@ const About = () => {
       <section className='bg-green-100 p-4'>
         <div className='lg:w-[90%] p-2 m-auto'>
           <Header type={1} text={'Meet the Team'} className={'text-center mb-3'} />
-          <div className='flex flex-wrap justifty-evenly gap-3 w-[80%] mx-auto'>
+          <div className='flex flex-wrap lg:justifty-evenly gap-3 w-full lg:w-[80%] mx-auto '>
           <Image
             type={5}
             text={'Name'}
