@@ -1,8 +1,9 @@
 import React from 'react'
 import { Button } from '../components/Button'
+import { Carousels } from '../components/Carousels';
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
-import { AiOutlineArrowRight } from "react-icons/ai";
+// import { AiOutlineArrowRight } from "react-icons/ai";
 import { Image } from '../components/ImageContainer';
 
 const Home = () => {
@@ -97,6 +98,11 @@ const Home = () => {
                             <Image type={1} />
                         </div>
                     </div>
+                </div>
+            </section>
+            <section>
+                <div className='lg:w-[90%] p-2 m-auto'>
+                    <Carousels />
                 </div>
             </section>
         </div>
