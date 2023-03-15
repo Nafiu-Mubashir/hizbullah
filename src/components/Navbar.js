@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Button } from './Button';
 // import logo from '../assets/navLogo.png';
@@ -15,32 +15,32 @@ const Navbar = () => {
         console.log(dropDown);
     }
 
-    const useOutsideAlerter = (ref) => {
-        useEffect(() => {
-            const handleClickOutside = (event) => {
-                if (ref.current && !ref.current.contains(event.target)) {
-                    setToggle(false);
-                    setDropDown(false)
-                }
-            };
+    // const useOutsideAlerter = (ref) => {
+    //     useEffect(() => {
+    //         const handleClickOutside = (event) => {
+    //             if (ref.current && !ref.current.contains(event.target)) {
+    //                 setToggle(false);
+    //                 setDropDown(false)
+    //             }
+    //         };
 
-            document.addEventListener('mousedown', handleClickOutside);
-            return () => {
-                document.removeEventListener('mousedown', handleClickOutside);
-            };
-        }, [ref]);
-    };
+    //         document.addEventListener('mousedown', handleClickOutside);
+    //         return () => {
+    //             document.removeEventListener('mousedown', handleClickOutside);
+    //         };
+    //     }, [ref]);
+    // };
 
 
     const wrapperRef = useRef(null);
-    useOutsideAlerter(wrapperRef);
+    // useOutsideAlerter(wrapperRef);
 
     return (
         <div className='sticky top-0 z-50 w-full'>
 
             <nav className="bg-white border-gray-200 sm:px-4 shadow">
                 <div className="container flex flex-wrap items-center justify-between mx-auto lg:w-[90%] p-2">
-                    <NavLink to='/home'>
+                    <NavLink to='/'>
                         <p className='uppercase text-[#45CD45] text-[18px] font-[700]'>Hizbullah</p>
                     </NavLink>
                     <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-[#45CD45] rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="navbar-default" aria-expanded="false" onClick={handleToggle}>

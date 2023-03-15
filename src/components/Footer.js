@@ -1,18 +1,19 @@
 import React from 'react'
 import { Button } from './Button';
+import { NavLink } from 'react-router-dom'
 
 const Footer = () => {
     return (
         <div>
 
             <footer class="bg-[#001300] bottom">
-                <div class="flex justify-evenly flex-col lg:flex-row px-6 py-8">
-                    <div className='text-center md:text-center lg:text-left'>
+                <div class="flex justify-evenly flex-col lg:flex-row px-3 lg:px-6 py-4 lg:py-8">
+                    <div className='text-left mb-4 md:mb-4 lg:mb-0'>
                         <h2 class="mb-3 lg:mb-6 text-sm font-bold text-[#45CD45] uppercase">Hizbullah</h2>
-                        <p class="text-[#FFFFFF] lg:w-[390px] mb-4">
+                        <p class="text-[#FFFFFF] lg:w-[350px] mb-4">
                             Borem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
                         </p>
-                        <div className='flex gap-3 mb-4 justify-center lg:justify-start'>
+                        <div className='flex gap-3 mb-4 justify-start'>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M24 12C24 5.3726 18.6274 2.65179e-05 12 2.65179e-05C5.37258 2.65179e-05 0 5.3726 0 12C0 17.9896 4.38823 22.954 10.125 23.8542V15.4688H7.07813V12H10.125V9.35628C10.125 6.34878 11.9165 4.68753 14.6576 4.68753C15.9705 4.68753 17.3438 4.9219 17.3438 4.9219V7.87503H15.8306C14.3399 7.87503 13.875 8.80003 13.875 9.74902V12H17.2031L16.6711 15.4688H13.875V23.8542C19.6118 22.954 24 17.9896 24 12Z" fill="#1877F2" />
                                 <path d="M16.6711 15.4687L17.2031 12H13.875V9.74899C13.875 8.80001 14.3399 7.875 15.8306 7.875H17.3438V4.92187C17.3438 4.92187 15.9705 4.6875 14.6576 4.6875C11.9165 4.6875 10.125 6.34875 10.125 9.35625V12H7.07812V15.4687H10.125V23.8542C10.7359 23.9501 11.3621 24 12 24C12.6379 24 13.2641 23.9501 13.875 23.8542V15.4687H16.6711Z" fill="white" />
@@ -26,34 +27,34 @@ const Footer = () => {
 
                         </div>
                     </div>
-                    <div className=' text-center md:text-center lg:text-left'>
+                    <div className=' text-left mb-4 md:mb-4 lg:mb-0'>
                         <h2 class="mb-3 lg:mb-6 text-sm font-bold text-[#FFFFFF] uppercase">Quick links</h2>
                         <ul class="text-[#FFFFFF]">
-                            <li class="mb-4">
-                                <a href="#" className="hover:underline">Home</a>
+                            <li class="mb-2 lg:mb-4">
+                                <NavLink to='/' className="hover:underline">Home</NavLink>
                             </li>
-                            <li class="mb-4">
-                                <a href="#" className="hover:underline">About</a>
+                            <li class="mb-2 lg:mb-4">
+                                <NavLink to='/bout' className="hover:underline">About</NavLink>
                             </li>
-                            <li class="mb-4">
-                                <a href="#" className="hover:underline">Newsblog</a>
+                            <li class="mb-2 lg:mb-4">
+                                <NavLink to='/news' className="hover:underline">Newsblog</NavLink>
                             </li>
-                            <li class="mb-4">
-                                <a href="#" className="hover:underline">Meet the team</a>
+                            <li class="mb-2 lg:mb-4">
+                                <NavLink to='/' className="hover:underline">Meet the team</NavLink>
                             </li>
-                            <li class="mb-4">
-                                <a href="#" className="hover:underline">Schools</a>
+                            <li class="mb-2 lg:mb-4">
+                                <NavLink to='/' className="hover:underline">Schools</NavLink>
                             </li>
-                            <li class="mb-4">
-                                <a href="#" className="hover:underline">Contact Us</a>
+                            <li class="mb-2 lg:mb-4">
+                                <NavLink to='/contact' className="hover:underline">Contact Us</NavLink>
                             </li>
                         </ul>
                     </div>
-                    <div className=' text-center md:text-center lg:text-left'>
+                    <div className=' text-left mb-4 md:mb-4 lg:mb-0'>
                         <h2 class="mb-3 lg:mb-6 text-sm font-bold text-[#FFFFFF] uppercase">Contact us</h2>
                         <ul class="text-[#FFFFFF]">
-                            <li class="mb-4 text-center md:text-center lg:text-left">
-                                <a href="#" className="hover:underline flex gap-2 justify-center lg:justify-start">
+                            <li class="mb-4 text-left">
+                                <a href="/" className="hover:underline flex gap-2 justify-start">
                                     <svg className='' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M12 22.75C6.07 22.75 1.25 17.93 1.25 12C1.25 6.07 6.07 1.25 12 1.25C17.93 1.25 22.75 6.07 22.75 12C22.75 17.93 17.93 22.75 12 22.75ZM12 2.75C6.9 2.75 2.75 6.9 2.75 12C2.75 17.1 6.9 21.25 12 21.25C17.1 21.25 21.25 17.1 21.25 12C21.25 6.9 17.1 2.75 12 2.75Z" fill="#F4F4F4" />
                                         <path d="M8.99999 21.75H7.99999C7.58999 21.75 7.24999 21.41 7.24999 21C7.24999 20.59 7.56999 20.26 7.97999 20.25C6.40999 14.89 6.40999 9.11 7.97999 3.75C7.56999 3.74 7.24999 3.41 7.24999 3C7.24999 2.59 7.58999 2.25 7.99999 2.25H8.99999C9.23999 2.25 9.46999 2.37 9.60999 2.56C9.74999 2.76 9.78999 3.01 9.70999 3.24C7.82999 8.89 7.82999 15.11 9.70999 20.77C9.78999 21 9.74999 21.25 9.60999 21.45C9.46999 21.63 9.23999 21.75 8.99999 21.75Z" fill="#F4F4F4" />
@@ -61,13 +62,23 @@ const Footer = () => {
                                         <path d="M12 17.2C9.21 17.2 6.43 16.81 3.75 16.02C3.74 16.42 3.41 16.75 3 16.75C2.59 16.75 2.25 16.41 2.25 16V15C2.25 14.76 2.37 14.53 2.56 14.39C2.76 14.25 3.01 14.21 3.24 14.29C8.89 16.17 15.12 16.17 20.77 14.29C21 14.21 21.25 14.25 21.45 14.39C21.65 14.53 21.76 14.76 21.76 15V16C21.76 16.41 21.42 16.75 21.01 16.75C20.6 16.75 20.27 16.43 20.26 16.02C17.57 16.81 14.79 17.2 12 17.2Z" fill="#F4F4F4" />
                                         <path d="M21 9.74999C20.92 9.74999 20.84 9.73999 20.76 9.70999C15.11 7.82999 8.88003 7.82999 3.23003 9.70999C2.83003 9.83999 2.41003 9.62999 2.28003 9.23999C2.16003 8.83999 2.37003 8.41999 2.76003 8.28999C8.72003 6.29999 15.28 6.29999 21.23 8.28999C21.62 8.41999 21.84 8.84999 21.7 9.23999C21.61 9.54999 21.31 9.74999 21 9.74999Z" fill="#F4F4F4" />
                                     </svg>
-
                                     https://myexample.com
 
                                 </a>
                             </li>
+                            <li class="mb-4 text-left">
+                                <a href="mailto:hizbullah@gmail.com?subject" className="hover:underline flex gap-2 justify-start">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17 21.25H7C3.35 21.25 1.25 19.15 1.25 15.5V8.5C1.25 4.85 3.35 2.75 7 2.75H17C20.65 2.75 22.75 4.85 22.75 8.5V15.5C22.75 19.15 20.65 21.25 17 21.25ZM7 4.25C4.14 4.25 2.75 5.64 2.75 8.5V15.5C2.75 18.36 4.14 19.75 7 19.75H17C19.86 19.75 21.25 18.36 21.25 15.5V8.5C21.25 5.64 19.86 4.25 17 4.25H7Z" fill="#292D32" />
+                      <path d="M11.9998 12.87C11.1598 12.87 10.3098 12.61 9.65978 12.08L6.52978 9.57997C6.20978 9.31997 6.14978 8.84997 6.40978 8.52997C6.66978 8.20997 7.13978 8.14997 7.45978 8.40997L10.5898 10.91C11.3498 11.52 12.6398 11.52 13.3998 10.91L16.5298 8.40997C16.8498 8.14997 17.3298 8.19997 17.5798 8.52997C17.8398 8.84997 17.7898 9.32997 17.4598 9.57997L14.3298 12.08C13.6898 12.61 12.8398 12.87 11.9998 12.87Z" fill="#292D32" />
+                    </svg>
+                                    
+                                    hizbullah@gmail.com
+
+                                </a>
+                            </li>
                             <li class="mb-4">
-                                <a href="#" className="hover:underline w-full lg:w-[266px] flex gap-2 justify-center lg:justify-start">
+                                <a href="/contact" className="hover:underline w-full lg:w-[266px] flex gap-2 justify-start">
                                     <svg className='' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M11.9999 14.1699C9.86988 14.1699 8.12988 12.4399 8.12988 10.2999C8.12988 8.15994 9.86988 6.43994 11.9999 6.43994C14.1299 6.43994 15.8699 8.16994 15.8699 10.3099C15.8699 12.4499 14.1299 14.1699 11.9999 14.1699ZM11.9999 7.93994C10.6999 7.93994 9.62988 8.99994 9.62988 10.3099C9.62988 11.6199 10.6899 12.6799 11.9999 12.6799C13.3099 12.6799 14.3699 11.6199 14.3699 10.3099C14.3699 8.99994 13.2999 7.93994 11.9999 7.93994Z" fill="#F4F4F4" />
                                         <path d="M11.9999 22.76C10.5199 22.76 9.02993 22.2 7.86993 21.09C4.91993 18.25 1.65993 13.72 2.88993 8.33C3.99993 3.44 8.26993 1.25 11.9999 1.25C11.9999 1.25 11.9999 1.25 12.0099 1.25C15.7399 1.25 20.0099 3.44 21.1199 8.34C22.3399 13.73 19.0799 18.25 16.1299 21.09C14.9699 22.2 13.4799 22.76 11.9999 22.76ZM11.9999 2.75C9.08993 2.75 5.34993 4.3 4.35993 8.66C3.27993 13.37 6.23993 17.43 8.91993 20C10.6499 21.67 13.3599 21.67 15.0899 20C17.7599 17.43 20.7199 13.37 19.6599 8.66C18.6599 4.3 14.9099 2.75 11.9999 2.75Z" fill="#F4F4F4" />
@@ -77,7 +88,7 @@ const Footer = () => {
                                 </a>
                             </li>
                             <li class="mb-4">
-                                <a href="#" className="hover:underline flex gap-2 justify-center lg:justify-start">
+                                <a href="tel:08039187402" className="hover:underline flex gap-2 justify-start">
                                     <svg className='' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M17.45 22.75C16.32 22.75 15.13 22.48 13.9 21.96C12.7 21.45 11.49 20.75 10.31 19.9C9.14 19.04 8.01 18.08 6.94 17.03C5.88 15.96 4.92 14.83 4.07 13.67C3.21 12.47 2.52 11.27 2.03 10.11C1.51 8.87 1.25 7.67 1.25 6.54C1.25 5.76 1.39 5.02 1.66 4.33C1.94 3.62 2.39 2.96 3 2.39C3.77 1.63 4.65 1.25 5.59 1.25C5.98 1.25 6.38 1.34 6.72 1.5C7.11 1.68 7.44 1.95 7.68 2.31L10 5.58C10.21 5.87 10.37 6.15 10.48 6.43C10.61 6.73 10.68 7.03 10.68 7.32C10.68 7.7 10.57 8.07 10.36 8.42C10.21 8.69 9.98 8.98 9.69 9.27L9.01 9.98C9.02 10.01 9.03 10.03 9.04 10.05C9.16 10.26 9.4 10.62 9.86 11.16C10.35 11.72 10.81 12.23 11.27 12.7C11.86 13.28 12.35 13.74 12.81 14.12C13.38 14.6 13.75 14.84 13.97 14.95L13.95 15L14.68 14.28C14.99 13.97 15.29 13.74 15.58 13.59C16.13 13.25 16.83 13.19 17.53 13.48C17.79 13.59 18.07 13.74 18.37 13.95L21.69 16.31C22.06 16.56 22.33 16.88 22.49 17.26C22.64 17.64 22.71 17.99 22.71 18.34C22.71 18.82 22.6 19.3 22.39 19.75C22.18 20.2 21.92 20.59 21.59 20.95C21.02 21.58 20.4 22.03 19.68 22.32C18.99 22.6 18.24 22.75 17.45 22.75ZM5.59 2.75C5.04 2.75 4.53 2.99 4.04 3.47C3.58 3.9 3.26 4.37 3.06 4.88C2.85 5.4 2.75 5.95 2.75 6.54C2.75 7.47 2.97 8.48 3.41 9.52C3.86 10.58 4.49 11.68 5.29 12.78C6.09 13.88 7 14.95 8 15.96C9 16.95 10.08 17.87 11.19 18.68C12.27 19.47 13.38 20.11 14.48 20.57C16.19 21.3 17.79 21.47 19.11 20.92C19.62 20.71 20.07 20.39 20.48 19.93C20.71 19.68 20.89 19.41 21.04 19.09C21.16 18.84 21.22 18.58 21.22 18.32C21.22 18.16 21.19 18 21.11 17.82C21.08 17.76 21.02 17.65 20.83 17.52L17.51 15.16C17.31 15.02 17.13 14.92 16.96 14.85C16.74 14.76 16.65 14.67 16.31 14.88C16.11 14.98 15.93 15.13 15.73 15.33L14.97 16.08C14.58 16.46 13.98 16.55 13.52 16.38L13.25 16.26C12.84 16.04 12.36 15.7 11.83 15.25C11.35 14.84 10.83 14.36 10.2 13.74C9.71 13.24 9.22 12.71 8.71 12.12C8.24 11.57 7.9 11.1 7.69 10.71L7.57 10.41C7.51 10.18 7.49 10.05 7.49 9.91C7.49 9.55 7.62 9.23 7.87 8.98L8.62 8.2C8.82 8 8.97 7.81 9.07 7.64C9.15 7.51 9.18 7.4 9.18 7.3C9.18 7.22 9.15 7.1 9.1 6.98C9.03 6.82 8.92 6.64 8.78 6.45L6.46 3.17C6.36 3.03 6.24 2.93 6.09 2.86C5.93 2.79 5.76 2.75 5.59 2.75ZM13.95 15.01L13.79 15.69L14.06 14.99C14.01 14.98 13.97 14.99 13.95 15.01Z" fill="#F4F4F4" />
                                     </svg>
@@ -88,14 +99,14 @@ const Footer = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className=' text-center md:text-center lg:text-left'>
-                        <h2 class="mb-3 lg:mb-6 text-sm font-bold text-[#FFFFFF] uppercase lg:text-center">News letter</h2>
+                    <div className=' text-left'>
+                        <h2 class="mb-3 lg:mb-6 text-sm font-bold text-[#FFFFFF] uppercase">News letter</h2>
                         <p class="text-[#FFFFFF] lg:w-[287px] mb-3">
                             Subscribe to get important informations when they drop
                         </p>
                         <div>
-                            <div class="flex gap-2">
-                                <input type="text" placeholder="username@site.com" className="rounded bg-[#001300] w-full" />
+                            <div class="">
+                                <input type="text" placeholder="username@site.com" className="rounded bg-[#001300] w-full mb-4" />
                                 {/* <button className="bg-green-400 absolute top-[0.5px] right-0 rounded py-2 text-[#FFFFFF] px-2">Subscribe</button> */}
                                 <Button text={'Subscribe'} className={''} />
                             </div>

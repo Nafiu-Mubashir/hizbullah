@@ -2,8 +2,9 @@ import React from 'react'
 import { Button } from '../components/Button'
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
-import { AiOutlineArrowRight } from "react-icons/ai";
+// import { AiOutlineArrowRight } from "react-icons/ai";
 import { Image } from '../components/ImageContainer';
+import { Carousel } from '../components/Carousels';
 
 const Home = () => {
     return (
@@ -98,6 +99,13 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section>
+            <div className='lg:w-[90%] p-2 m-auto'>
+            lj.shdkm,
+                {/* <Carousel /> */}
+            </div>
             </section>
         </div>
     )
