@@ -16,7 +16,7 @@ const Home = () => {
                 </div>
             </section>
             <section className='bg-green-100 '>
-                <div className='lg:w-[90%] p-2 m-auto'>
+                <div className='lg:w-[90%] p-3 lg:p-2 m-auto'>
                     <div className="relative flex justify-between m-auto top-[-40px] lg:top-[-50px] lg:w-[50%]">
                         <div className='h-[105px] lg:h-[134px] w-[120px] lg:w-[132px] bg-white rounded-lg shadow-lg lg:p-3'>
                             <h3 className='text-[36px] lg:text-[36px] font-700 font-bold mb-3 text-[#45CD45] text-center'>2K+</h3>
