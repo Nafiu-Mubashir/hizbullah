@@ -1,17 +1,36 @@
 import React from 'react'
 import { Button } from '../components/Button'
+import { Carousels, TestimoniesCaroulsel } from '../components/Carousels';
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
 // import { AiOutlineArrowRight } from "react-icons/ai";
 import { Image } from '../components/ImageContainer';
-import { Carousel } from '../components/Carousels';
+// import { Carousel } from '../components/Carousels';
 
 const Home = () => {
     return (
         <div>
-            <section className='bg-gradient-to-r from-green-100 via-white to-white '>
+            <section className='bg-gradient-to-r from-green-100 via-green-50 to-white '>
                 <div className='lg:w-[90%] p-2 m-auto'>
                     <Hero />
+                </div>
+            </section>
+            <section className='bg-green-100 '>
+                <div className='lg:w-[90%] p-2 m-auto'>
+                    <div className="relative flex justify-between m-auto top-[-40px] lg:top-[-50px] lg:w-[50%]">
+                        <div className='h-[105px] lg:h-[134px] w-[120px] lg:w-[132px] bg-white rounded-lg shadow-lg lg:p-3'>
+                            <h3 className='text-[36px] lg:text-[36px] font-700 font-bold mb-3 text-[#45CD45] text-center'>2K+</h3>
+                            <p className='text-[14px] text-center'>Schools Built</p>
+                        </div>
+                        <div className='h-[105px] lg:h-[134px] w-[120px] lg:w-[132px] bg-white rounded-lg shadow-lg lg:p-3 mt-28 lg:mt-0'>
+                            <h3 className='text-[36px] lg:text-[36px] font-700 font-bold mb-3 text-[#45CD45] text-center'>90+</h3>
+                            <p className='text-[14px] text-center'>Qualified staffs</p>
+                        </div>
+                        <div className='h-[105px] lg:h-[134px] w-[120px] lg:w-[132px] bg-white rounded-lg shadow-lg lg:p-3'>
+                            <h3 className='text-[36px] lg:text-[36px] font-700 font-bold mb-3 text-[#45CD45] text-center'>99%</h3>
+                            <p className='text-[14px] text-center'>Qualified staffs</p>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section className='bg-green-100 '>
@@ -83,8 +102,11 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
             <section>
+
                 <div className='lg:w-[90%] p-2 m-auto'>
+
                     <Header type={1} text={'About Us'} className={'text-[32px] lg:text-[40px] text-center mb-3'} />
                     <div className='flex justify-between flex-col lg:flex-row'>
                         <div className='w-full lg:w-[50%] p-2 mb-3 lg:p-5'>
@@ -100,12 +122,16 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-
             <section>
-            <div className='lg:w-[90%] p-2 m-auto'>
-            lj.shdkm,
-                {/* <Carousel /> */}
-            </div>
+
+                <div className='lg:w-[90%] p-2 m-auto'>
+                    <TestimoniesCaroulsel />
+                </div>
+            </section>
+            <section>
+                <div className='lg:w-[90%] p-2 m-auto'>
+                    <Carousels />
+                </div>
             </section>
         </div>
     )

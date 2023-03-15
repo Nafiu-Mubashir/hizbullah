@@ -31,9 +31,34 @@
     background-image: url('./assets/Rectangle 13.png');
    
   }
+
+  .second{
+    background-image: url('./assets/unsplash_QdAAasrZhdk.png');
+   
+  }
+
+  .third{
+    background-image: url('./assets/unsplash_PGnqT0rXWLs.png');
+   
+  }
+  .fourth{
+    background-image: url('./assets/unsplash_MHsfcJD2RJw.png');
+   
+  }
   
   .about {
     background-image: url('./assets/aboutUs.png');
+  }
+  
+  .carousel .rounded-full {
+    /* background-color: #61c961; */
+    /* position: relative;
+    top: 40px; */
+  }
+ 
+
+  .carousel button .sr-only{
+    display: none !important;
   }
 
   @media (max-width: 678px) {
