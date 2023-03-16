@@ -28,7 +28,7 @@ export const Image = ({ type, text, content }) => {
             }
             {
                 type === 4 &&
-                <div className='w-[270px] h-[300px] bg-black mb-20 rounded-lg relative'>
+                <div className='w-[260px] h-[300px] bg-black mb-20 rounded-lg relative'>
                     <img src={project} alt="" className='w-full h-[300px] rounded-lg' />
                     <div className='w-full h-[160px] bg-white absolute bottom-0 rounded-b-lg hover:h-[80px text-center'>
                         {/*  <header className="text-center p-2">
