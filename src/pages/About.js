@@ -5,7 +5,7 @@ import { Image } from '../components/ImageContainer'
 
 const About = () => {
   return (
-    <div>
+    <div className='mt-12'>
       <div className='about h-[160px] w-full lg:h-[220px] bg-cover bg-center bg-no-repeat flex justify-center items-center'>
         <Header type={1} text={'About Us'} className={'text-white text-center'} />
       </div>

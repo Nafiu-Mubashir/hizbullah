@@ -39,7 +39,7 @@ const Navbar = () => {
     // useOutsideAlerter(wrapperRef);
 
     return (
-        <div className='sticky top-0 z-50 w-full'>
+        <div className='fixed top-0 z-50 w-full'>
 
             <nav className="w-screen bg-white border-gray-200 sm:px-4 shadow">
                 <div className="container flex flex-wrap items-center justify-between mx-auto lg:w-[90%] p-2">

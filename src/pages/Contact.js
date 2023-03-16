@@ -5,7 +5,7 @@ import image from '../assets/Rectangle 14.png'
 
 const Contact = () => {
   return (
-    <div className='bg-gradient-to-r from-white via-white to-green-100 '>
+    <div className='bg-gradient-to-r from-white via-white to-green-100 mt-12'>
 
       <div className='lg:w-[90%] p-2 m-auto'>
         <Header type={1} text={'Contact Us'} className={'text-center text-[32px] lg:text-[40px] lg:mb-4 p-2 lg:p-4'} />
