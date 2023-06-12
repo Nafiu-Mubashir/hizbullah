@@ -49,6 +49,10 @@
   .about {
     background-image: url('./assets/aboutUs.png');
   }
+
+  .blog{
+    background-image: url("./assets/unsplash_MHsfcJD2RJw.png");
+  }
   
   .carousel .rounded-full {
     /* background-color: #61c961; */
