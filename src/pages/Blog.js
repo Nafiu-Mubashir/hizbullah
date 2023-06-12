@@ -4,13 +4,13 @@ import BlogCardItem from "../components/BlogCardItem";
 function BlogPage(props) {
   return (
     <div className="mt-12">
-      <div className="blog h-[160px] w-full lg:h-[220px] bg-cover bg-center bg-no-repeat flex justify-center items-center">
+      <div className="blog brightness-60 h-[160px] w-full lg:h-[220px] bg-cover bg-center bg-no-repeat flex justify-center items-center">
         <Header
           type={1}
           text={
             <div>
-              <h1 className="text-[48px]">Blogs and news</h1>
-              <p className="text-[20px]">
+              <h1 className="text-[32px] lg:text-[48px]">News</h1>
+              <p className="text-[16px] lg:text-[20px]">
                 Read the latest press release and news from hizbullah
               </p>
             </div>
