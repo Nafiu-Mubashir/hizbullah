@@ -10,7 +10,7 @@ import { Image } from '../components/ImageContainer';
 const Home = () => {
     return (
         <div className='mt-12'>
-            <section className='bg-gradient-to-r from-green-100 via-green-50 to-white '>
+            <section className='hero lg:h-[600px] '>
                 <div className='lg:w-[90%] p-2 m-auto'>
                     <Hero />
                 </div>

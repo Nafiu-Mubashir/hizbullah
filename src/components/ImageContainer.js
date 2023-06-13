@@ -42,11 +42,11 @@ export const Image = ({ type, text, content }) => {
             }
             {
                 type === 5 &&
-                <div className='w-[153px] lg:w-[220px] h-[180px lg:h-[300px] mb-3 rounded-lg p-[3px] bg-white'>
-                    <div className='h-[220px]'>
+                <div className='w-[300px] lg:w-[360px] h-[416px] lg:h-[480px] mb-3 rounded-lg p-[3px] bg-white'>
+                    <div className='h-[330px] lg:h-[380px]'>
                         <img src={team} alt="" className='w-full h-full rounded-lg' />
                     </div>
-                    <div className='w-full bg-white rounded-b-lg p-2'>
+                    <div className='w-full rounded-b-lg p-3'>
                         <h4 className='font-bold mb-1'>{text}</h4>
                         <p className='mb-1'>{content}</p>
                     </div>

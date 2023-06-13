@@ -7,7 +7,7 @@ const Footer = () => {
         <div>
 
             <footer class="bg-[#001300] bottom">
-                <div class="flex justify-evenly flex-col lg:flex-row px-3 lg:px-6 py-4 lg:py-8">
+                <div class="flex justify-evenly flex-col lg:flex-row px-5 md:px-3 lg:px-6 py-5 md:py-4 lg:py-8">
                     <div className='text-left mb-4 md:mb-4 lg:mb-0'>
                         <h2 class="mb-3 lg:mb-6 text-sm font-bold text-[#45CD45] uppercase">Hizbullah</h2>
                         <p class="text-[#FFFFFF] lg:w-[350px] mb-4">

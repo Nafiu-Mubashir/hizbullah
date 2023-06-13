@@ -53,6 +53,14 @@
   .blog{
     background-image: url("./assets/Blog_flowers.png");
   }
+
+  .contact {
+    background-image: url('./assets/contactUs.png');
+  }
+
+  .hero{
+    background-image: url('./assets/homepage/hero\ section.png');
+  }
   
   .carousel .rounded-full {
     /* background-color: #61c961; */
