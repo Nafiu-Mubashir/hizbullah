@@ -88,7 +88,7 @@ function BlogItem() {
       <section>
         <h1 className="mt-[5rem] font-bold text-[32px]">Latest news</h1>
         {latestNewsLists.map((latestNewsList, i) => (
-          <div className="border-b-4 pb-8 mb-10 md:pb-4 md:mb-20">
+          <div className="border-b border-[#000] pb-8 mb-10 md:pb-16 md:mb-20">
             <div className="text-[20px] md:text-[32px] underline underline-offset-8 my-6">
               <a href="#">{latestNewsList.title}</a>
             </div>
