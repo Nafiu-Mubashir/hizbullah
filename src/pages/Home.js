@@ -5,6 +5,7 @@ import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
 import { Image } from '../components/ImageContainer';
 import Projects from '../components/Projects';
+import Team from '../components/Team';
 
 const Home = () => {
     return (
@@ -139,6 +140,12 @@ const Home = () => {
                 <div className='lg:w-[90%] p-2 m-auto'>
                     <Header type={1} text={'Our Latest Updates'} className={'text-[32px] lg:text-[40px] text-center mb-3'} />
                     <Carousels />
+                </div>
+            </section>
+            <section>
+                <div className='lg:w-[90%] p-2 m-auto'>
+                    <Header type={1} text={'Our Team'} className={'text-[32px] lg:text-[40px] text-center mb-3'} />
+                    <Team />
                 </div>
             </section>
         </div>

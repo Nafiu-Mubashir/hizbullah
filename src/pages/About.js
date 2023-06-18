@@ -5,6 +5,7 @@ import { Image } from '../components/ImageContainer'
 import Projects from '../components/Projects';
 import contact from '../assets/Rectangle 27.png';
 import question from '../assets/Rectangle 28.png';
+import partnerIcon from "../assets/partner.png"
 
 const About = () => {
   return (
@@ -92,8 +93,30 @@ const About = () => {
       </section>
       <section>
         <div className='lg:w-[90%] p-2 m-auto'>
+          <Header type={1} text={'Our Partners'} className={'text-center mb-3'} />
+          <div className='ml-20 p-3 flex justify-evenly'>
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+          </div>
+          <div className='mr-20 p-3 flex justify-between'>
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+          </div>
+          
+        </div>
+      </section>
+      <section>
+        <div className='lg:w-[90%] p-2 m-auto'>
           <Header type={1} text={'Get in Touch'} className={'text-center mb-3'} />
-          <div className="flex justify-between gap-10 lg:gap-0 flex-col lg:flex-row">
+          <div className="flex justify-between gap-10 lg:gap-0 flex-col lg:flex-row p-3">
             <div className='flex items-center flex-col lg:flex-row gap-6 lg:w-[50%]'>
               <img src={contact} alt="" />
               <a href="/" className='text-[32px] font-bold underline'>Contact Us</a>
