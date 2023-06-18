@@ -75,7 +75,7 @@ function BlogItem() {
                 />
               </div>
               <div className="px-4 mb-4 font-bold underline decoration-solid underline-offset-4 text-[18px]">
-                <a href="#">{featuredNewsList.title}</a>
+                <a href="/">{featuredNewsList.title}</a>
               </div>
               <div className="px-4 pb-2 text-[12px]">
                 <p>{featuredNewsList.date}</p>
@@ -90,7 +90,7 @@ function BlogItem() {
         {latestNewsLists.map((latestNewsList, i) => (
           <div className="border-b border-[#000] pb-8 mb-10 md:pb-16 md:mb-20">
             <div className="text-[20px] md:text-[32px] underline underline-offset-8 my-6">
-              <a href="#">{latestNewsList.title}</a>
+              <a href="/">{latestNewsList.title}</a>
             </div>
             <div className="font-[400] text-[14px] md:text-[18px] tracking-[-0.5px] text-[#6D6D6D]">
               <p>{latestNewsList.description}</p>
@@ -108,7 +108,7 @@ function BlogItem() {
       </section>
 
       <div className="text-center text-[#29A529]">
-        <a href="#">See all latest news release</a>
+        <a href="/">See all latest news release</a>
       </div>
     </>
   );

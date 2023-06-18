@@ -1,8 +1,8 @@
-import React, { useRef, useState } from 'react';
-import { NavLink, useMatch, useResolvedPath } from 'react-router-dom';
+import React, {  useState } from 'react';
+// useRef,
+import { NavLink,  } from 'react-router-dom';
+// useMatch, useResolvedPath
 import { Button } from './Button';
-// import logo from '../assets/navLogo.png';
-// import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Navbar = ({to}) => {
     const [toggle, setToggle] = useState(false);
@@ -35,10 +35,10 @@ const Navbar = ({to}) => {
     // };
 
 
-    const wrapperRef = useRef(null);
+    // const wrapperRef = useRef(null);
     // useOutsideAlerter(wrapperRef);
-    let resolved = useResolvedPath(to);
-  let match = useMatch({ path: resolved.pathname, end: true });
+//     let resolved = useResolvedPath(to);
+//   let match = useMatch({ path: resolved.pathname, end: true });
 
     return (
         <div className='fixed top-0 z-50 w-full'>

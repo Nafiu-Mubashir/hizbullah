@@ -1,12 +1,10 @@
 import React from 'react'
 import { Button } from '../components/Button'
-import { Carousels, ProjectCarousel, TestimoniesCaroulsel } from '../components/Carousels';
+import { Carousels, TestimoniesCaroulsel } from '../components/Carousels';
 import { Header } from '../components/Header'
 import { Hero } from '../components/Hero'
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 import { Image } from '../components/ImageContainer';
-import UserScroll from '../components/Team';
+import Projects from '../components/Projects';
 
 const Home = () => {
     return (
@@ -134,7 +132,7 @@ const Home = () => {
                     <Header type={1} text={'Our Projects'} className={'text-[32px] lg:text-[40px] text-center mb-3'} />
                     <p className='text-center'>Take a look at some of our projects we have done across the country, while some are still ongoing</p>
 
-                    <UserScroll />
+                    <Projects />
                 </div>
             </section>
             <section>
