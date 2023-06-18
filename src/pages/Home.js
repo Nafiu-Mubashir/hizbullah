@@ -6,6 +6,7 @@ import { Hero } from '../components/Hero'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Image } from '../components/ImageContainer';
+import UserScroll from '../components/Team';
 
 const Home = () => {
     return (
@@ -132,73 +133,8 @@ const Home = () => {
                 <div className='lg:w-[90%] p-2 m-auto'>
                     <Header type={1} text={'Our Projects'} className={'text-[32px] lg:text-[40px] text-center mb-3'} />
                     <p className='text-center'>Take a look at some of our projects we have done across the country, while some are still ongoing</p>
-                    <Carousel
-                        additionalTransfrom={0}
-                        arrows
-                        autoPlay
-                        autoPlaySpeed={5000}
-                        centerMode={false}
-                        className=""
-                        containerClass="container-with-dots"
-                        dotListClass=""
-                        draggable
-                        focusOnSelect={false}
-                        infinite
-                        itemClass=""
-                        keyBoardControl
-                        minimumTouchDrag={80}
-                        pauseOnHover
-                        renderArrowsWhenDisabled={false}
-                        renderButtonGroupOutside={false}
-                        renderDotsOutside={false}
-                        responsive={{
-                            desktop: {
-                                breakpoint: {
-                                    max: 3000,
-                                    min: 1024
-                                },
-                                items: 4,
-                                partialVisibilityGutter: 20
-                            },
-                            mobile: {
-                                breakpoint: {
-                                    max: 464,
-                                    min: 0
-                                },
-                                items: 1,
-                                partialVisibilityGutter: 30
-                            },
-                            tablet: {
-                                breakpoint: {
-                                    max: 1024,
-                                    min: 464
-                                },
-                                items: 2,
-                                partialVisibilityGutter: 30
-                            }
-                        }}
-                        rewind={false}
-                        rewindWithAnimation={false}
-                        rtl={false}
-                        shouldResetAutoplay
-                        showDots={false}
-                        sliderClass=""
-                        slidesToSlide={2}
-                        swipeable
-                    >
-                        <Image type={4} />
-                        <Image type={4} />
-                        <Image type={4} />
-                        <Image type={4} />
-                        <Image type={4} />
-                        <Image type={4} />
-                        <Image type={4} />
-                        <Image type={4} />
-                        <Image type={4} />
-                        <Image type={4} />
-                        <Image type={4} />
-                        <Image type={4} />
-                    </Carousel>
+
+                    <UserScroll />
                 </div>
             </section>
             <section>

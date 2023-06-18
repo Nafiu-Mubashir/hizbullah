@@ -7,7 +7,7 @@ import { Header } from './Header';
 
 export const Image = ({ type, text, content }) => {
     return (
-        <div className=''>
+        <div>
             {
                 type === 1 &&
                 <div className='p-2 lg:p-5'>
@@ -26,20 +26,7 @@ export const Image = ({ type, text, content }) => {
                     <img src={image2} className='w-full lg:w-[608px] h-[320px] lg:h-[414px] box-shadow3 rounded-lg bg-[#45CD45]' alt="" />
                 </div>
             }
-            {
-                type === 4 &&
-                <div className='w-[260px] h-[300px] bg-black mb-20 rounded-lg relative'>
-                    <img src={project} alt="" className='w-full h-[300px] rounded-lg' />
-                    <div className='w-full h-[160px] bg-white absolute bottom-0 rounded-b-lg hover:h-[80px text-center'>
-                        {/*  <header className="text-center p-2">
-                <h4 className='font-bold mb-1'>{text}</h4>
-                <p className='mb-1'>{content}</p>
-                <Button text={'More Info'} className={'block m-auto'} />
-            </header> */}
-                        <Header type={2} text={'Name of project'} content={'Morem ipsum dolor sit amet, consectetur adipiscing elit.'} />
-                    </div>
-                </div>
-            }
+            
             {
                 type === 5 &&
                 <div className='w-[300px] lg:w-[360px] h-[416px] lg:h-[480px] mb-3 rounded-lg p-[3px] bg-white'>
@@ -53,5 +40,21 @@ export const Image = ({ type, text, content }) => {
                 </div>
             }
         </div>
+    )
+}
+
+export const ProjectsCarousels = ({ type }) => {
+    return (
+       <div className='px-[70px] md:px-[70px] lg:px-[50px]'>
+         {
+            type === 4 &&
+            <div className='w-[260px] h-[300px] bg-black mb-20 rounded-lg relative'>
+                <img src={project} alt="" className='w-full h-[300px] rounded-lg' />
+                <div className='w-full h-[160px] bg-white absolute bottom-0 rounded-b-lg hover:h-[80px text-center'>
+                    <Header type={2} text={'Name of project'} content={'Morem ipsum dolor sit amet, consectetur adipiscing elit.'} />
+                </div>
+            </div>
+        }
+       </div>
     )
 }
