@@ -6,15 +6,15 @@ import image from "../assets/Rectangle 14.png";
 const Contact = () => {
   return (
     <div className="bg-gradient-to-r from-white via-white to-green-100 mt-12">
-        <div className="contact h-[160px] w-full lg:h-[220px] bg-cover bg-center bg-no-repeat flex justify-center items-center">
-          {/* <Header
+      <div className="contact h-[160px] w-full lg:h-[220px] bg-cover bg-center bg-no-repeat flex justify-center items-center">
+        {/* <Header
             type={1}
             text={"Contact Us"}
             className={
               "text-center text-[32px] lg:text-[40px] lg:mb-4 p-2 lg:p-4"
             }
           /> */}
-        </div>
+      </div>
       <div className="lg:w-[90%] p-2 m-auto">
         <div>
           <div className="flex flex-col lg:flex-row justify-between gap-3 p-3">
@@ -37,7 +37,7 @@ const Contact = () => {
                       className="appearance-none block w-full bg-white shadow text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none"
                       id="grid-first-name"
                       type="text"
-                      placeholder="Jane"
+                      placeholder="Mubashir"
                     />
                   </div>
                   <div className="w-full md:w-1/2 px-3">
@@ -90,7 +90,7 @@ const Contact = () => {
                 <li class="mb-4">
                   <a
                     href="/contact"
-                    className="hover:underline w-full lg:w-[266px] flex gap-2 justify-center lg:justify-start"
+                    className="hover:underline w-full lg:w-[px] flex gap-2 justify-center lg:justify-start"
                   >
                     <svg
                       className=""
@@ -109,7 +109,10 @@ const Contact = () => {
                         fill="#292D32"
                       />
                     </svg>
-                    2972 Westheimer Rd. Santa Ana, Illinois 85486
+                    8,10,12 Al-kawthar Avenue, Abule-Oko Via Adiyan-Gasline,
+                    via Agbado Station,,
+                    Ifo Local Government,
+                    Ogun State
                   </a>
                 </li>
 
@@ -156,7 +159,7 @@ const Contact = () => {
                         fill="#292D32"
                       />
                     </svg>
-                    hizbullah@gmail.com
+                    info@alkawharfoundations.org
                   </a>
                 </li>
               </ul>
