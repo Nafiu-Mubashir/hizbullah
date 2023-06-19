@@ -2,8 +2,10 @@ import React from 'react'
 import { Button } from '../components/Button'
 import { Header } from '../components/Header'
 import { Image } from '../components/ImageContainer'
-import Carousel from "react-multi-carousel";
-
+import Projects from '../components/Projects';
+import contact from '../assets/Rectangle 27.png';
+import question from '../assets/Rectangle 28.png';
+import partnerIcon from "../assets/partner.png"
 
 const About = () => {
   return (
@@ -63,73 +65,7 @@ const About = () => {
         <div className='lg:w-[90%] p-2 m-auto'>
           <Header type={1} text={'What we do'} className={'text-[32px] lg:text-[40px] text-center'} />
           <p className='text-center mb-5'>Take a look at some of our projects we have done across the country, while some are still ongoing</p>
-          <Carousel
-            additionalTransfrom={0}
-            arrows
-            autoPlay
-            autoPlaySpeed={5000}
-            centerMode={false}
-            className=""
-            containerClass="container-with-dots"
-            dotListClass=""
-            draggable
-            focusOnSelect={false}
-            infinite
-            itemClass=""
-            keyBoardControl
-            minimumTouchDrag={80}
-            pauseOnHover
-            renderArrowsWhenDisabled={false}
-            renderButtonGroupOutside={false}
-            renderDotsOutside={false}
-            responsive={{
-              desktop: {
-                breakpoint: {
-                  max: 3000,
-                  min: 1024
-                },
-                items: 4,
-                partialVisibilityGutter: 20
-              },
-              mobile: {
-                breakpoint: {
-                  max: 464,
-                  min: 0
-                },
-                items: 1,
-                partialVisibilityGutter: 30
-              },
-              tablet: {
-                breakpoint: {
-                  max: 1024,
-                  min: 464
-                },
-                items: 2,
-                partialVisibilityGutter: 30
-              }
-            }}
-            rewind={false}
-            rewindWithAnimation={false}
-            rtl={false}
-            shouldResetAutoplay
-            showDots={false}
-            sliderClass=""
-            slidesToSlide={2}
-            swipeable
-          >
-            <Image type={4} />
-            <Image type={4} />
-            <Image type={4} />
-            <Image type={4} />
-            <Image type={4} />
-            <Image type={4} />
-            <Image type={4} />
-            <Image type={4} />
-            <Image type={4} />
-            <Image type={4} />
-            <Image type={4} />
-            <Image type={4} />
-          </Carousel>
+          <Projects />
         </div>
       </section>
       <section className='bg-green-100 p-4'>
@@ -156,19 +92,41 @@ const About = () => {
         </div>
       </section>
       <section>
-      <div className='lg:w-[90%] p-2 m-auto'>
+        <div className='lg:w-[90%] p-2 m-auto'>
+          <Header type={1} text={'Our Partners'} className={'text-center mb-3'} />
+          <div className='ml-20 p-3 flex justify-evenly'>
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+          </div>
+          <div className='mr-20 p-3 flex justify-between'>
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+            <img src={partnerIcon} alt="" />
+          </div>
+          
+        </div>
+      </section>
+      <section>
+        <div className='lg:w-[90%] p-2 m-auto'>
           <Header type={1} text={'Get in Touch'} className={'text-center mb-3'} />
-            <div className="flex justify-center flex-col lg:flex-row">
-            <div className='flex'>
-              <img src="" alt="" />
-              <a href="#">Contact Us</a>
+          <div className="flex justify-between gap-10 lg:gap-0 flex-col lg:flex-row p-3">
+            <div className='flex items-center flex-col lg:flex-row gap-6 lg:w-[50%]'>
+              <img src={contact} alt="" />
+              <a href="/" className='text-[32px] font-bold underline'>Contact Us</a>
             </div>
-            <div className='flex'>
-              <img src="" alt="" />
-              <a href="#">Frequently Asked Questions</a>
-            </div>
+            <div className='flex items-center flex-col lg:flex-row gap-6 lg:w-[50%]'>
+              <img src={question} alt="" />
+              <a href="/" className='text-[32px] font-bold underline'>Frequently Asked Questions</a>
             </div>
           </div>
+        </div>
       </section>
     </div>
   )

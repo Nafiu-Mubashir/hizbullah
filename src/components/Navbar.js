@@ -1,10 +1,10 @@
-import React, { useRef, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, {  useState } from 'react';
+// useRef,
+import { NavLink,  } from 'react-router-dom';
+// useMatch, useResolvedPath
 import { Button } from './Button';
-// import logo from '../assets/navLogo.png';
-// import { AiOutlineArrowRight } from "react-icons/ai";
 
-const Navbar = () => {
+const Navbar = ({to}) => {
     const [toggle, setToggle] = useState(false);
     const [dropDown, setDropDown] = useState(false);
     const handleToggle = () => {
@@ -35,8 +35,10 @@ const Navbar = () => {
     // };
 
 
-    const wrapperRef = useRef(null);
+    // const wrapperRef = useRef(null);
     // useOutsideAlerter(wrapperRef);
+//     let resolved = useResolvedPath(to);
+//   let match = useMatch({ path: resolved.pathname, end: true });
 
     return (
         <div className='fixed top-0 z-50 w-full'>
@@ -75,7 +77,7 @@ const Navbar = () => {
                             <NavLink to={'/blog'}>
                                 <p className="block py-2 pl-3 pr-4 text-[12px] text-gray-700 rounded md:border-0 md:hover:text-[#45CD45] md:p-0" onClick={mobile}>Blog</p>
                             </NavLink>
-                            <NavLink to={'/contact'}>
+                            <NavLink to={'/contact'} className={({ isActive }) => "nav-link" + (isActive ? " activated" : "")}>
                                 <p className="block py-2 pl-3 pr-4 text-[12px] text-gray-700 rounded md:border-0 md:hover:text-[#45CD45] md:p-0" onClick={mobile}>Contact Us</p>
                             </NavLink>
                             <button className="text-[12px] flex items-center justify-between w-24 py-2 pl-3 pr-4 font-medium border-b border-gray-100 text-gray-700 rounded md:border-0 md:hover:text-[#45CD45] md:p-0 md:w-auto" onClick={handleDropDown}> Schools
@@ -87,13 +89,13 @@ const Navbar = () => {
 
                             <div className={dropDown === false ? "z-50 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44" : "z-50 block font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-32 absolute md:right-24 top-56 md:top-96 lg:right-1/3 lg:top-12"}>
                                 <ul class="py-2 text-sm text-gray-700 dark:text-gray-400">
-                                    <NavLink>
+                                    <a href='https://astc.sch.ng/' target='blank'>
                                         <p className="block py-2 pl-3 pr-4 text-[12px] text-gray-700 rounded md:border-0 md:hover:text-[#45CD45] md:p-0 text-left lg:text-center">ASTC</p>
-                                    </NavLink>
-                                    <NavLink>
+                                    </a>
+                                    <a href='https://alkawtharmodelcollege.com/' target='blank'>
                                         <p className="block py-2 pl-3 pr-4 text-[12px] text-gray-700 rounded md:border-0 md:hover:text-[#45CD45] md:p-0 text-left lg:text-center">AMC</p>
-                                    </NavLink>
-                                    <NavLink>
+                                    </a>
+                                    <NavLink to={'/'}>
                                         <p className="block py-2 pl-3 pr-4 text-[12px] text-gray-700 rounded md:border-0 md:hover:text-[#45CD45] md:p-0 text-left lg:text-center">HOC</p>
                                     </NavLink>
                                 </ul>
