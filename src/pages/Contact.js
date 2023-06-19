@@ -109,10 +109,7 @@ const Contact = () => {
                         fill="#292D32"
                       />
                     </svg>
-                    8,10,12 Al-kawthar Avenue, Abule-Oko Via Adiyan-Gasline,
-                    via Agbado Station,,
-                    Ifo Local Government,
-                    Ogun State
+                    8,10,12 Al-kawthar Avenue, Abule-Oko Via Adiyan-Gasline, via Agbado Station, Ifo Local Government, Ogun State
                   </a>
                 </li>
 

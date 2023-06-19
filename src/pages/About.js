@@ -94,7 +94,7 @@ const About = () => {
       <section>
         <div className='lg:w-[90%] p-2 m-auto'>
           <Header type={1} text={'Our Partners'} className={'text-center mb-3'} />
-          <div className='ml-20 p-3 flex justify-evenly'>
+          <div className='lg:ml-20 p-3 flex justify-evenly flex-wrap'>
             <img src={partnerIcon} alt="" />
             <img src={partnerIcon} alt="" />
             <img src={partnerIcon} alt="" />
@@ -102,7 +102,7 @@ const About = () => {
             <img src={partnerIcon} alt="" />
             <img src={partnerIcon} alt="" />
           </div>
-          <div className='mr-20 p-3 flex justify-between'>
+          <div className='lg:mr-20 p-3 flex justify-evenly lg:justify-between flex-wrap'>
             <img src={partnerIcon} alt="" />
             <img src={partnerIcon} alt="" />
             <img src={partnerIcon} alt="" />
@@ -110,7 +110,7 @@ const About = () => {
             <img src={partnerIcon} alt="" />
             <img src={partnerIcon} alt="" />
           </div>
-          
+
         </div>
       </section>
       <section>

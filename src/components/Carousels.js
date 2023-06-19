@@ -1,7 +1,5 @@
 import { Carousel } from "flowbite-react";
-
 import { Button } from "./Button"
-import { Image } from "./ImageContainer"
 import testimony from '../assets/Ellipse 9.png'
 
 export const Carousels = () => {
@@ -161,9 +159,3 @@ export const TestimoniesCaroulsel = () => {
         </div>
     )
 }
-
-// export const ProjectCarousel = () => {
-//     return (
-        
-//     )
-// }
