@@ -46,7 +46,7 @@ const Navbar = ({to}) => {
             <nav className="w-screen bg-white border-gray-200 sm:px-4 shadow">
                 <div className="container flex flex-wrap items-center justify-between mx-auto lg:w-[90%] p-2">
                     <NavLink to='/'>
-                        <p className='uppercase text-[#45CD45] text-[18px] font-[700]'>Hizbullah</p>
+                        <p className='uppercase text-[#45CD45] text-[16px] font-[700]'>Al-Kawthar Foundation</p>
                     </NavLink>
                     <button className='lg:hidden h-full' onClick={handleToggle}>
                                 {

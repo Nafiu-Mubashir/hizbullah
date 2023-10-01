@@ -27,12 +27,10 @@ const About = () => {
             <div className='flex justify-between flex-col-reverse lg:flex-row'>
               <div className='w-full lg:w-[50%] p-2 mb-3 lg:p-5'>
                 {/* <Header type={1} text={'We always deliver the best at Hizbullah'} className={'text-center lg:text-left'} /> */}
-                <p className='mb-4'>
-                  It feels like only yesterday when Hizbullah was just an idea, a vision born out of a deep conviction that education holds the key to a brighter future. Our founders, driven by a shared passion for transforming the educational landscape, embarked on a mission to build schools that would inspire and empower generations to come.
-                  From humble beginnings, with a small team of dedicated individuals, we took our first steps on this path, facing numerous challenges and overcoming countless obstacles. Each milestone we achieved was a testament to the unwavering commitment of our team and the trust placed in us by our clients and partners.
-                  As we grew, we remained guided by our core values—excellence, innovation, collaboration, and integrity. We recognized that building schools was not simply about bricks and mortar; it was about creating environments that nurtured minds, fostered growth, and provided opportunities for students to thrive.
-                  With each project we undertook, we honed our skills, refined our processes, and deepened our understanding of the unique needs of educators, students, and communities. We listened attentively to our clients, collaborating closely with them to bring their visions to life, and ensuring that each school we built reflected their educational philosophies and aspirations.
-                  Over the years, our portfolio has expanded, encompassing a diverse range of educational institutions, from elementary schools to high schools, from private academies to specialized learning centers. Our reputation for delivering exceptional quality, meeting deadlines, and staying within budget has grown, cementing our position as a trusted partner in the field of school construction.
+                <p className='mb-4 text-justify'>
+                  Al-Kawthar Foundation is an Islamic socio-cultural organization established by the Hizbullah Movement of Nigeria to serve as an organization that will implement several programs and projects of the movement varying from educational, health, worship centers(Masjid), economic empowerment, and social welfare for Muslims. <br /><br />
+
+                  It was established in 1994 to supervise the construction of different institutions that assist in the implementation of the movement programs
                 </p>
                 {/* <Button text={'Discover more'} className={'m-auto lg:m-0'} /> */}
               </div>

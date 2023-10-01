@@ -1,5 +1,6 @@
 {
-  "name": "hizbullah",
+  "name": "alkawtharorg",
+  "homepage": "https://alkawtharfoundations.org",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
